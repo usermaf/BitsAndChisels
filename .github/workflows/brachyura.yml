@@ -23,9 +23,9 @@ jobs:
     - name: Build with Brachyura
       run: java -jar ./brachyura-bootstrap-0.jar build
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v1
       with:
           name: jars
           path: |
-            **/build/libs/bitsandchisels-*.*.*-*.jar
+            **/home/runner/work/BitsAndChisels/BitsAndChisels/build/libs/bitsandchisels-2.7.4.jar
           if-no-files-found: error

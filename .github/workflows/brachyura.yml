@@ -22,8 +22,8 @@ jobs:
         java-version: 17
     - name: Build with Brachyura
       run: java -jar ./brachyura-bootstrap-0.jar build
-    - name: Get Artifacts
     - uses: actions/upload-artifact@v1
+    - name: Get Artifacts
       with:
           name: jars
           path: |
